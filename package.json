@@ -1,0 +1,25 @@
+{
+  "name": "landing-amaral-shopee",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Landing page Amaral e Bohrer Advogados - Conta suspensa na Shopee",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && node prerender.mjs",
+    "preview": "vite preview --port 4173",
+    "tweaks": "TWEAKS=1 vite",
+    "build:tweaks": "TWEAKS=1 vite build"
+  },
+  "dependencies": {
+    "@preact/preset-vite": "^2.10.5",
+    "preact": "^10.29.1",
+    "preact-render-to-string": "^6.6.7",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.3.4",
+    "vite": "5.4.10"
+  }
+}
