@@ -33,7 +33,7 @@ export function Footer() {
           <span>OAB/RS 7.789</span>
         </div>
         <p className="foot-disclaimer">
-          Este site não faz parte da Shopee, do Google, do Facebook ou de suas controladoras, nem é afiliado a essas empresas. Não oferecemos nenhum tipo de serviço oficial dessas plataformas ou do governo e não praticamos qualquer tipo de fraude.
+          <strong>Este site pertence a um escritório de advocacia independente e não possui qualquer vínculo, afiliação, patrocínio ou autorização de Shopee, Mercado Livre, Amazon, Magazine Luiza, Google ou Meta.</strong> As marcas citadas pertencem aos seus respectivos titulares e são mencionadas apenas para descrever, de forma factual, o serviço jurídico oferecido. Não somos canal oficial de atendimento dessas plataformas e não intermediamos contato com elas. <strong>Este site não pratica phishing:</strong> não solicitamos senhas, códigos de verificação, dados de login ou quaisquer credenciais de acesso a plataformas, e não reproduzimos telas de login de terceiros. Os dados fornecidos destinam-se exclusivamente ao contato para prestação de serviços advocatícios. Não oferecemos serviço oficial do governo, não praticamos fraude e não comercializamos criptoativos.
         </p>
       </div>
     </footer>
