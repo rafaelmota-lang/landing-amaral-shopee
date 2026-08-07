@@ -32,6 +32,10 @@ export function ContactForm() {
     setRoutedTo(consultant);
     setSubmitted(true);
 
+    // Conversao: formulario proprio preenchido (o WhatsApp e aberto logo abaixo).
+    // O botao de envio nao e um link, entao a delegacao global de cliques nao o cobre.
+    if (typeof window !== 'undefined' && window.__track) window.__track('formulario');
+
     const msg = encodeURIComponent(
       `Olá, ${consultant.name}! Meu nome é ${data.nome}. ` +
       `Sou ${data.perfil || 'usuário'} na Shopee. ` +
