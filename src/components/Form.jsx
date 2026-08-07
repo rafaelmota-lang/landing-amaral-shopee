@@ -34,7 +34,7 @@ export function ContactForm() {
 
     // Conversao: formulario proprio preenchido (o WhatsApp e aberto logo abaixo).
     // O botao de envio nao e um link, entao a delegacao global de cliques nao o cobre.
-    if (typeof window !== 'undefined' && window.__track) window.__track('formulario');
+    if (typeof window !== 'undefined' && window.__track) window.__track('whatsapp');
 
     const msg = encodeURIComponent(
       `Olá, ${consultant.name}! Meu nome é ${data.nome}. ` +
