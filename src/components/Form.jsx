@@ -1,9 +1,12 @@
 import { useState } from 'react';
 import { Icons } from './Icons.jsx';
 
+// P0 de receita: 5511912611616 removido do pool. E a conexao "Banido - F - 1616" no Digisac
+// (FASE-0-RESULTADOS.md achado C2) e, pelo algoritmo abaixo, recebia o primeiro submit de todo
+// navegador novo, ou seja, praticamente todo lead real. Nao foi substituido por outro numero
+// porque nenhum substituto tem estado e capacidade comprovados: ver P0-EXECUTION-PACKAGE.md.
 const LEAD_ROUTING = [
   { name: 'Pedro Amaral', email: 'pedrobamaral@yahoo.com.br', whatsapp: '5511972021019' },
-  { name: 'Rafael Mota', email: 'rafael.mota@conversaojuridica.com.br', whatsapp: '5511912611616' },
 ];
 
 function getNextConsultant() {
