@@ -94,7 +94,8 @@
 
   // Conversoes registradas no painel do OpenAI Ads:
   //   'whatsapp' -> evento custom (ir para o WhatsApp: link direto ou envio do formulario)
-  //   'lead'     -> evento padrao lead_created (ida para a pagina de captura do Leadster)
+  // O evento 'lead_created' saiu junto com o Leadster: nao existe mais pagina
+  // de captura nesta LP, entao o unico caminho de conversao e o WhatsApp.
   // track() tambem dispara o carregamento do SDK, cobrindo o caso em que o
   // clique na CTA e a primeira interacao do visitante na pagina.
   // Dedupe por sessao e por tipo: o mesmo visitante repetindo a mesma acao
