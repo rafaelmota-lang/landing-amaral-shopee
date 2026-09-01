@@ -1,7 +1,8 @@
 import { Icons, StarsRow } from './Icons.jsx';
-import { LEAD_URL } from '../config.js';
+import { useWhatsAppLink } from '../useWhatsAppLink.js';
 
 export function Banner() {
+  const whatsappLink = useWhatsAppLink();
   const items = [
     {
       icon: <Icons.Contract />,
@@ -33,7 +34,7 @@ export function Banner() {
           ))}
         </div>
         <div className="cta-block">
-          <a id="lead" href={LEAD_URL} target="_blank" rel="noopener" className="cta">Fale com um especialista em Shopee <Icons.Arrow /></a>
+          <a id="lead" href={whatsappLink} target="_blank" rel="noopener" className="cta">Fale com um especialista em Shopee <Icons.Arrow /></a>
           <StarsRow light />
         </div>
       </div>

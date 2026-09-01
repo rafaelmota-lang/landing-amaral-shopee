@@ -8,7 +8,6 @@ import { Lawyer } from './components/Lawyer.jsx';
 import { WhyUs } from './components/WhyUs.jsx';
 import { Testimonials } from './components/Testimonials.jsx';
 import { FAQ } from './components/FAQ.jsx';
-import { ContactForm } from './components/Form.jsx';
 import { Footer } from './components/Footer.jsx';
 
 const TWEAKS_ENABLED = typeof __TWEAKS__ !== 'undefined' && __TWEAKS__;
@@ -59,7 +58,6 @@ export function App() {
         <WhyUs />
         <Testimonials />
         <FAQ />
-        <ContactForm />
       </main>
       <Footer />
 

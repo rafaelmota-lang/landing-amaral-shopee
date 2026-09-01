@@ -1,4 +1,6 @@
+import { useWhatsAppLink } from '../useWhatsAppLink.js';
 export function Footer() {
+  const whatsappLink = useWhatsAppLink();
   return (
     <footer className="site">
       <div className="wrap">
@@ -15,7 +17,7 @@ export function Footer() {
             <ul>
               <li>contato@amaraladvogados.app</li>
               <li>(11) 99682-4517</li>
-              <li><a href="#contato">Formulário de atendimento</a></li>
+              <li><a id="lead" href={whatsappLink} target="_blank" rel="noopener">Falar no WhatsApp</a></li>
             </ul>
           </div>
           <div className="foot-col">
