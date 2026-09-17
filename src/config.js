@@ -17,21 +17,20 @@
 // Livre", e as duas carregam a tag de origem (#Google / #Meta).
 
 export const WHATSAPP_POOL = [
-  // Canal "Canal Rede Social" do Fluxo Juridico, modo COEXISTENCIA.
-  // Decisao do dono em 2026-09-16: todas as LPs passam para este canal.
-  { numero: '5511926878630', peso: 1 },
+  // Fluxo Juridico, os dois canais de redes sociais.
+  { numero: '5511926878173', peso: 1 }, // "Z-API - Redes Sociais"
+  { numero: '5511926878630', peso: 1 }, // "Canal Rede Social" (coexistencia)
 
   // ---------------------------------------------------------------------
   // HISTORICO - ler antes de acrescentar numero.
   //
-  // 2026-09-16: sai 5511926471049 ("Canal Mercado Livre"), entra o 8630.
-  // 2026-09-01: saiam 5511972021019 e 5511912611616, ambos ARQUIVADOS e
-  //   DESCONECTADOS no Digisac; 100% de quem preenchia o formulario caia no
-  //   vazio.
+  // 2026-09-17: o 8173 VOLTOU do banimento e entra de novo no pool.
+  // 2026-09-16: 8173 removido, banido pelo WhatsApp. Naquele dia a API do FJ
+  //   seguiu reportando o canal como "connected" com o numero ja banido: o
+  //   painel nao denuncia banimento, e o monitor deu "ok" para numero morto.
   //
   // ANTES DE INCLUIR OU REATIVAR QUALQUER UM: conferir que esta conectado,
-  // nao arquivado E nao banido. O painel nao mostra banimento: em 2026-09-16
-  // a API do FJ reportou "connected" para um numero ja banido.
+  // nao arquivado E nao banido. So mandando mensagem de teste da para saber.
   // ---------------------------------------------------------------------
 ];
 
@@ -41,7 +40,7 @@ export const ASSUNTO = 'Quero recuperar minha conta da Shopee';
 
 export const MENSAGEM_INICIAL = `${ORIGENS.site.tag} - ${ASSUNTO}`;
 
-const CHAVE_STICKY = 'ab_shopee_wpp_v2';
+const CHAVE_STICKY = 'ab_shopee_wpp_v3';
 
 export function escolherNumero() {
   try {
